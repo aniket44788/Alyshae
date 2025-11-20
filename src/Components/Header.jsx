@@ -8,7 +8,7 @@ export default function Header() {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
     return (
-        <header className="header relative flex flex-col items-center px-6 py-2 bg-transparent backdrop-blur-sm z-50">
+        <header className="header relative flex flex-col items-center  py-2 bg-transparent backdrop-blur-sm z-50">
 
             {/* Top Row */}
             <div className="w-full max-w-[1200px] mx-auto flex items-center justify-between px-4">
@@ -35,9 +35,6 @@ export default function Header() {
                         />
                     </Link>
                 </div>
-
-                {/* Fake spacer for alignment */}
-                <div className="w-6 h-6 md:hidden"></div>
             </div>
 
 
@@ -98,7 +95,7 @@ export default function Header() {
             )}
 
             {/* Banner Section */}
-            <div className="mt-2 py-0 w-full">
+            <div className="mt-2 w-full">
                 <div className="max-w-[1200px] mx-auto px-4">
                     <div className="relative overflow-hidden group">
 
@@ -112,12 +109,13 @@ export default function Header() {
                         {/* Text box — bottom overlay on desktop, below image on mobile */}
                         <div
                             className="
-                                bg-white p-5 text-left shadow-sm transition-all
-                                static mt-3
-                                lg:absolute lg:bottom-5 lg:left-5 lg:mt-0
-                            "
+        bg-white text-left shadow-sm transition-all
+        static mt-3
+        lg:absolute lg:bottom-5 lg:left-5 lg:mt-0
+        lg:pb-4 lg:pl-4
+    "
                         >
-                            <h3 className="text-[20px] font-semibold mb-2 text-black leading-snug">
+                            <h3 className="text-[20px] font-semibold mb-1 text-black leading-snug">
                                 The Creation Awaits.
                             </h3>
 
@@ -144,9 +142,9 @@ export default function Header() {
                 </div>
             </div>
 
-            <div className="py-2">
+            <div className="py-3">
                 <div className="max-w-[1200px] mx-auto ">
-                    <div className="text-center mb-8">
+                    <div className="text-center ">
                         <h2
                             className="
   text-black leading-snug tracking-[0.2px]
@@ -181,7 +179,7 @@ export default function Header() {
                                 </div>
 
                                 {/* Details */}
-                                <div className="w-full text-center bg-white py-6 px-4 mt-4">
+                                <div className="w-full text-center bg-white py-4 px-4 mt-4">
 
                                     {/* Title */}
                                     <h3 className="
@@ -232,7 +230,7 @@ export default function Header() {
             </div>
 
 
-            <footer className="bg-white mt-2">
+            <footer className=" w-full bg-white mt-2">
                 <div className="w-full max-w-[1200px] mx-auto px-4">
 
                     {/* Top Section */}
@@ -247,7 +245,7 @@ export default function Header() {
                     md:grid-cols-3
                     lg:grid-cols-4
                     gap-8
-                    text-left   /* 👈 IMPORTANT */
+                    text-left 
                 "
                         >
 
@@ -259,11 +257,11 @@ export default function Header() {
                                     className="mb-4 w-[140px]"
                                 />
 
-                                <p className="text-sm text-gray-700">Near Ibrahimpur Railway Station</p>
-                                <p className="text-sm text-gray-700">Vijayapura - 586109</p>
-                                <p className="text-sm text-gray-700">Karnataka - IN</p>
+                                <p className="text-sm text-gray-700 mb-2">Near Ibrahimpur Railway Station</p>
+                                <p className="text-sm text-gray-700 mb-2">Vijayapura - 586109</p>
+                                <p className="text-sm text-gray-700 mb-0">Karnataka - IN</p>
 
-                                <p className="mt-3 text-sm text-gray-900 font-medium">
+                                <p className="mt-3 mb-2 text-sm text-gray-900 font-medium">
                                     Phone: <span className="font-normal">(0) 94808 90906</span>
                                 </p>
 
