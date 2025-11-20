@@ -144,62 +144,38 @@ export default function Header() {
                         </div>
                     </div>
 
-                    <div className="py-1">
-                        <div className="max-w-[1200px] mx-auto px-4">
-                            <div className="flex flex-wrap -mx-2">
+                    <div className="py-1 w-full flex justify-center">
+                        <div className="w-full max-w-[1160px] px-4">
+
+                            <div className="flex flex-wrap justify-start">
 
                                 {/* Banner Item */}
-                                <div className="w-full md:w-1/2">
+                                <div className="w-full md:w-1/2 flex justify-start">
                                     <div className="relative">
 
                                         {/* Image */}
-                                        <div className="w-full overflow-hidden rounded">
+                                        <div className="w-full sm:w-[90%] md:w-[575px] h-auto md:h-[687px] overflow-hidden rounded">
                                             <img
                                                 src={ring}
                                                 alt="The Vow Ring"
-                                                className="w-full h-auto object-cover"
+                                                className="w-full h-full object-cover object-left"
                                             />
                                         </div>
 
                                         {/* Details */}
                                         <div className="w-full text-center bg-white py-4 px-4 mt-4">
-
-                                            {/* Title */}
-                                            <h3 className="
-                                                text-[18px]
-                                                sm:text-[20px]
-                                                md:text-[22px]
-                                                lg:text-[24px]
-                                                font-semibold 
-                                                text-black 
-                                                tracking-[0.2px]
-                                                mb-2
-                                            ">
+                                            <h3 className="text-[18px] sm:text-[20px] md:text-[22px] lg:text-[24px] font-semibold text-black tracking-[0.2px] mb-2">
                                                 The Vow Ring
                                             </h3>
-
-                                            {/* Subtitle */}
                                             <span className="block text-[12px] sm:text-[13px] text-gray-700 mb-2">
                                                 Limited Edition 999 Only
                                             </span>
-
-                                            {/* Description */}
                                             <p className="text-gray-600 text-[13px] sm:text-[14px] leading-relaxed mb-4">
                                                 A promise sealed in tungsten, bound by NFT.
                                             </p>
-
-                                            {/* Button */}
                                             <a
                                                 href="/TheEdition"
-                                                className="
-                                                    inline-block
-                                                    px-4 py-2
-                                                    bg-black text-white
-                                                    uppercase text-[12px] tracking-wide
-                                                    border border-black
-                                                    transition-all duration-300
-                                                    hover:bg-transparent hover:text-black
-                                                "
+                                                className="inline-block px-4 py-2 bg-black text-white uppercase text-[12px] tracking-wide border border-black transition-all duration-300 hover:bg-transparent hover:text-black"
                                             >
                                                 Own this creation
                                             </a>
@@ -211,6 +187,7 @@ export default function Header() {
                             </div>
                         </div>
                     </div>
+
 
                     <footer className="w-full bg-white mt-2">
                         <div className="w-full max-w-[1200px] mx-auto px-4">
@@ -259,20 +236,23 @@ export default function Header() {
                                     <div className="hidden md:block"></div>
 
                                     {/* Information */}
-                                    <div className="text-left md:text-left w-[204.8px] h-[213.5px]">
+                                    {/* Information */}
+                                    <div className="text-left md:text-left w-[204.8px]">
 
                                         {/* Header + Arrow */}
                                         <button
                                             onClick={() => setInfoOpen(!infoOpen)}
-                                            className="w-full flex items-center justify-between md:cursor-auto md:pointer-events-none border-b border-gray-200"
+                                            className="w-full flex items-center justify-between border-b border-gray-200"
                                         >
-                                            <h4 className="text-[15px] font-semibold uppercase mb-3">
+                                            <h4 className="text-[15px] font-semibold uppercase mb-1">
                                                 Informations
                                             </h4>
 
                                             {/* Arrow visible only on mobile */}
-                                            <span className="md:hidden text-xl transition-transform duration-300"
-                                                style={{ transform: infoOpen ? "rotate(180deg)" : "rotate(0deg)" }}>
+                                            <span
+                                                className="md:hidden text-xl transition-transform duration-300"
+                                                style={{ transform: infoOpen ? "rotate(180deg)" : "rotate(0deg)" }}
+                                            >
                                                 {infoOpen ? "˄" : "˅"}
                                             </span>
                                         </button>
@@ -280,14 +260,12 @@ export default function Header() {
                                         {/* Dropdown list */}
                                         <ul
                                             className={`
-    space-y-2 
-    overflow-hidden 
-    transition-all 
-    duration-300
-    w-[174.8px] 
-    h-[117.5px]
-    ${infoOpen ? "opacity-100" : "opacity-0 md:opacity-100"}
-  `}
+       
+      overflow-hidden 
+      transition-all 
+      duration-300
+      ${infoOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0 md:max-h-full md:opacity-100"}
+    `}
                                         >
                                             {[
                                                 ["About us", "/About_Us"],
@@ -308,6 +286,7 @@ export default function Header() {
                                         </ul>
 
                                     </div>
+
 
 
                                     {/* Social */}
