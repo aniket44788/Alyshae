@@ -1,4 +1,5 @@
 import React from 'react'
+import ring from "../assets/images/product-images/the_vow_ring.jpg"
 
 function Creation() {
   return (
@@ -60,9 +61,9 @@ function Creation() {
                 {/* Image Column */}
                 <div className="list-view-item__image-column flex-shrink-0 w-16 sm:w-24 md:w-32 lg:w-56 pr-2 sm:pr-4">
                   <div className="list-view-item__image-wrapper relative ">
-                    <a href="/TheEdition" className="block">
+                    <a href="/Edition" className="block">
                       <img
-                        src="https://www.alyshae.com/assets/images/the_vow_ring.jpg"
+                        src={ring}
                         alt="The Vow Ring"
                         className="w-full h-auto aspect-[210/251] object-cover "
                         loading="lazy"
@@ -74,7 +75,7 @@ function Creation() {
                 {/* Title Column */}
                 <div className="list-view-item__title-column flex-grow p-1">
                   <h4 className="grid-view-item__title font-poppins font-semibold text-base sm:text-lg md:text-xl text-black mb-3 leading-tight">
-                    <a href="/TheEdition" className="hover:text-orange-500 transition-colors duration-300">
+                    <a href="/Edition" className="hover:text-orange-500 transition-colors duration-300">
                       The Vow Ring
                     </a>
                   </h4>
@@ -82,7 +83,7 @@ function Creation() {
                     A limited-edition Alyshaé creation — handcrafted, custom-engraved, and made uniquely for you. A symbol of purity, intention, and timeless elegance.
                   </p>
                   <a
-                    href="/TheEdition"
+                    href="/Edition"
                     className="btn btn-small inline-block font-poppins font-normal text-white text-xs uppercase tracking-wider bg-black border border-transparent rounded px-4 py-2 hover:bg-gray-800 opacity-80 hover:opacity-100 transition-all duration-300 text-center no-underline"
                   >
                     Own this creation

@@ -1,0 +1,280 @@
+/* ==================== VOW RING PRODUCT SECTION - FULLY RESPONSIVE ==================== */
+
+.vow-product-section {
+  padding: 50px 0;
+  background: #fff;
+}
+
+.vow-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.vow-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+/* Image Column - ALWAYS LEFT SIDE */
+.vow-image-col {
+  flex: 1;
+  min-width: 300px;
+  order: 1;
+}
+
+.vow-image-wrapper {
+  width: 100%;
+  max-width: 570px;
+  height: auto; /* Auto height - scales with image */
+  overflow: hidden;
+  /* border-radius: 8px; */
+  margin: 0 auto;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.vow-product-img {
+  width: 100%;
+  height: auto; /* Auto height - maintains aspect ratio */
+  display: block; /* Removes bottom gap */
+  object-fit: contain; /* Shows full image without cropping */
+  transition: transform 0.4s ease;
+}
+
+.vow-product-img:hover {
+  transform: scale(1.05);
+}
+
+/* Details Column - ALWAYS RIGHT SIDE */
+.vow-details-col {
+  flex: 1;
+  min-width: 300px;
+  order: 2;
+}
+
+.vow-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.vow-limited {
+  display: inline-block;
+  color: #2e7d32;
+  font-size: 13px;
+  font-weight: 600;
+  /* border-radius: 4px; */
+}
+
+.vow-price {
+  font-size: 22px;
+  font-weight: 700;
+  color: #000;
+  margin: 14px 0 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+.vow-description {
+  font-size: 11px;
+  line-height: 1.8;
+  color: #444;
+  margin-bottom: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.vow-description strong {
+  color: #000;
+}
+
+/* Form Area */
+.vow-form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: left;
+  gap: 20px;
+  padding: 24px 0;
+  border-top: 1px dotted #999;
+  border-bottom: 1px dotted #999;
+}
+
+.vow-quantity-group {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  gap: 12px;
+}
+
+.vow-label {
+  font-size: 13px;
+  font-weight: 500;
+  color: #000;
+  white-space: nowrap;
+}
+
+.vow-required {
+  color: #d32f2f;
+}
+
+.vow-qty-input {
+  width: 56px;
+  height: 46px;
+  text-align: center;
+  border: 1px solid #ccc;
+  background: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  /* border-radius: 0; */
+}
+
+/* Checkout Button - Responsive Width */
+.vow-checkout-btn {
+  display: block;
+  width: 100%;
+  max-width: 545px;
+  height: 46px;
+  background: #000;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 12.5px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
+  text-align: center;
+  line-height: 46px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  opacity: 0.92;
+}
+
+.vow-checkout-btn:hover {
+  background: #111;
+  opacity: 1;
+}
+
+.vow-info-link {
+  background: none;
+  border: none;
+  color: #555;
+  font-size: 13.5px;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.vow-info-link:hover {
+  color: #000;
+}
+
+.vow-type {
+  margin-top: 20px;
+  font-size: 13px;
+  color: #666;
+}
+
+.vow-type-link {
+  color: #000;
+  text-decoration: none;
+}
+
+.vow-type-link:hover {
+  color: #c33;
+}
+
+/* ==================== RESPONSIVE BREAKPOINTS ==================== */
+
+/* Large Desktop (1200px+) */
+@media (min-width: 1200px) {
+  .vow-image-wrapper {
+    max-width: 570px; /* Maximum width on large screens */
+  }
+}
+
+/* Desktop (992px - 1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .vow-grid {
+    flex-wrap: nowrap;
+  }
+  .vow-image-col {
+    order: 1;
+  }
+  .vow-details-col {
+    order: 2;
+  }
+  .vow-image-wrapper {
+    max-width: 500px; /* Smaller container */
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .vow-checkout-btn {
+    width: 545px;
+  }
+}
+
+/* Tablet (768px - 991px) */
+@media (max-width: 991px) {
+  .vow-image-col {
+    order: 1;
+  }
+  .vow-details-col {
+    order: 2;
+  }
+  .vow-image-wrapper {
+    max-width: 450px; /* Even smaller */
+  }
+  .vow-checkout-btn {
+    max-width: 420px;
+  }
+}
+
+/* Mobile Landscape / Small Tablet (577px - 767px) */
+@media (max-width: 767px) {
+  .vow-image-wrapper {
+    max-width: 500px; /* Smaller container */
+  }
+  .vow-form {
+    flex-direction: column;
+    align-items: left;
+  }
+}
+
+/* Mobile Portrait (320px - 576px) */
+@media (max-width: 576px) {
+  .vow-image-col {
+    order: 1;
+  }
+  .vow-details-col {
+    order: 2;
+  }
+  .vow-image-wrapper {
+    max-width: 100%; /* Full width on mobile */
+  }
+  .vow-form {
+    flex-direction: column;
+    align-items: left;
+  }
+  .vow-quantity-group {
+    justify-content: left;
+  }
+  .vow-checkout-btn {
+    max-width: 100%;
+  }
+  .vow-product-section {
+    padding: 30px 0;
+  }
+}
+
+/* Extra Small Mobile (below 400px) */
+@media (max-width: 399px) {
+  .vow-image-wrapper {
+    max-width: 100%;
+  }
+  .vow-title {
+    font-size: 22px;
+  }
+}

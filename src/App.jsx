@@ -9,6 +9,7 @@ import Creation from "./Pages/Creation";
 
 import HomeContent from "./Pages/HomeContent";
 import Origin from "./Pages/Origin";
+import Edition from "./Pages/Edition";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/" element={<HomeContent />} />
         <Route path="/Creation" element={<Creation />} />
         <Route path="/Origin" element={<Origin />} />
+        <Route path="/Edition" element={<Edition />} />
       </Routes>
       <Footer />
     </BrowserRouter>

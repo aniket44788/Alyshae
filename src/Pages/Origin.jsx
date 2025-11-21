@@ -1,4 +1,5 @@
 import React from 'react'
+import ring from "../assets/images/product-images/the_vow_ring.jpg"
 
 function Origin() {
     return (

@@ -74,7 +74,7 @@ function HomeContent() {
             </div>
 
             <div className="py-1 w-full flex justify-center">
-                <div className="w-full max-w-[1160px] px-4">
+                <div className="w-full max-w-[1200px] px-4">
 
                     <div className="flex flex-wrap justify-start">
 
@@ -83,7 +83,7 @@ function HomeContent() {
                             <div className="relative">
 
                                 {/* Image */}
-                                <div className="w-full sm:w-[90%] md:w-[575px] h-auto md:h-[687px] overflow-hidden rounded">
+                                <div className="w-full sm:w-[90%] md:w-[575px]  h-auto md:h-[687px] overflow-hidden rounded">
                                     <img
                                         src={ring}
                                         alt="The Vow Ring"
@@ -103,7 +103,7 @@ function HomeContent() {
                                         A promise sealed in tungsten, bound by NFT.
                                     </p>
                                     <a
-                                        href="/TheEdition"
+                                        href="/Edition"
                                         className="inline-block px-4 py-2 bg-black text-white uppercase text-[12px] tracking-wide border border-black transition-all duration-300 hover:bg-transparent hover:text-black"
                                     >
                                         Own this creation
