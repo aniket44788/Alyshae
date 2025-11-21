@@ -6,6 +6,8 @@ import Header from "../src/Components/Header";
 import Footer from "./Components/Footer";
 
 import Creation from "./Pages/Creation";
+
+import HomeContent from "./Pages/HomeContent";
 import Origin from "./Pages/Origin";
 
 function App() {
@@ -13,9 +15,11 @@ function App() {
     <BrowserRouter>
       <Header />
       <Routes>
+        <Route path="/" element={<HomeContent />} />
         <Route path="/Creation" element={<Creation />} />
         <Route path="/Origin" element={<Origin />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }
